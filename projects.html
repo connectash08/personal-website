@@ -1,0 +1,102 @@
+<!-- Showcase some of your projects and add links to their GitHub repos-->
+ <!DOCTYPE html>
+
+ <html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>
+            Projects - Ashish Sathyanarayanan
+        </title>
+        <script>
+            window.addEventListener("load", function() {
+                const screenElements = document.querySelectorAll(".fadeIn");
+                screenElements.forEach(function (element) {
+                    element.classList.add("visible");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+        <img height="80" width="150" src="MainWebsiteLogo.png" alt="Website Logo">
+        <div class="projectsIntro leftSwooshGeneral">
+        Welcome! Feel free to visit some of my favorite projects below.
+    </div>
+    <div class="container mt-4">
+        <div class="alert alert-info topSwooshGeneral" role="alert">
+            Thanks for visiting! You can check out a project
+            by reading its description and clicking on the blue link
+            that guides you to the GitHub repository page for that
+            project.
+        </div>
+    </div>
+    <div class="projectsBox fadeIn">
+        <div class="workplaceAssistantCard" style="width: 18rem;">
+        <img src="morrowviaLogo.png" class="morrowviaLogo fadeIn" alt="morrowVia Company Logo">
+        <div class="wA-cardBody">
+            <h5 class="wA-cardTitle">Morrowvia Workplace Assistant</h5>
+            <p class="wA-cardText">
+                This is the Morrovia Workplace Assistant - an AI chatbot
+                that can read company documents and answer questions about them
+                in a chatbot-style format. Combines LLM skills and RAG architecture
+                along with GUI design.
+            </p>
+            <a href="https://github.com/connectash08/AI-Workplace-Assistant---Morrowvia" class="wA-cardButton">Check it out!</a>
+        </div>
+        </div>
+
+        <div class="predictiveWritingAssistantCard" style="width: 18rem;">
+            <img src="autocompletePWA.png" class="pwaImage fadeIn" alt="Autocomplete image">
+            <div class="pwa-cardBody">
+                <h5 class="pwa-cardTitle">Predictive Writing Assistant</h5>
+                <p class="pwa-cardText">
+                    I developed this predictive writing assistant to suggest
+                    words/characters based on what the user types, similar to
+                    the autocomplete feature on phones, but I added a unique
+                    twist by basing the data off movie scripts.
+                </p>
+                <a href="https://github.com/connectash08/PredictiveWritingTool_MovieScripts" class="pwa-cardButton">Check it out!</a>
+            </div>
+        </div>
+
+        <div class="predictiveWritingAssistantCard" style="width: 18rem;">
+            <img src="digitronVisual.png" class="pwaImage fadeIn" alt="Digitron Visual Aid">
+            <div class="pwa-cardBody">
+                <h5 class="pwa-cardTitle">Virtual Assistant - Digitron</h5>
+                <p class="pwa-cardText">
+                    This is the earliest attempt I made towards creating a digital
+                    assistant chatbot, nicknamed "Digitron". It's not really a
+                    "chatbot", but more of a helpful program that can extract
+                    information from sources like Wolframalpha and Wikipedia to
+                    answer questions, kind of like a web scraper. It can do more than
+                    that though, so feel free to take a look!
+                </p>
+                <a href="https://github.com/connectash08/AS_DigitronAssistant" class="pwa-cardButton">Check it out!</a>
+            </div>
+        </div>
+
+        <div class="predictiveWritingAssistantCard" style="width: 18rem;">
+            <img src="productProgramVisual.png" class="pwaImage fadeIn" alt="Product Visual">
+            <div class="pwa-cardBody">
+                <h5 class="pwa-cardTitle">Product Rating System</h5>
+                <p class="pwa-cardText">
+                    This project uses randomly generated data to simulate
+                    how users rate products based on category preferences and
+                    visualize pricing trends across different categories. It
+                    uses Numpy, Pandas, and Matplotlib to handle data, perform
+                    numerical operations, and create graphs.
+                </p>
+                <a href="https://github.com/connectash08/AS_ProductRatingProgram_Portfolio" class="pwa-cardButton">Check it out!</a>
+            </div>
+        </div>
+    </div>
+    <script src="scrollAnimations.js"></script>
+    </body>
+ </html>

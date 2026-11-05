@@ -1,0 +1,170 @@
+<!-- Talk more about yourself here - interests, goals, what you're learning, fun facts, some photos! -->
+ <!DOCTYPE html>
+
+ <html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>
+            About Me - Ashish Sathyanarayanan
+        </title>
+        <script>
+            window.addEventListener("DOMContentLoaded", function(){
+                const introHeader = document.querySelector(".introLeftSwoosh");
+                introHeader.classList.add("animate")
+
+                const whyCSMessage = "I chose Computer Science because I realized that it was the medium that brought great benefit to the world, not just throughout history but even now. My dad was the one who introduced me to technology, enthusiatically talking about the most recent developments in tech on our afternoon walks. I was motivated by his words and upon looking at the world through my own eyes, I saw firsthand that technology has the potential to change lives for the better. From that moment on, I knew I wanted to be part of that change, and I did so through Computer Science."
+                const whyCSLocation = document.querySelector("#typeInCSResponse");
+                function typeResponse(message, typeLocation){
+                    let charIndex = 0;
+                    typeLocation.textContent= "";
+                    function typeCharByChar(){
+                        if(charIndex < message.length){
+                            typeLocation.textContent += message[charIndex];
+                            charIndex++;
+                            setTimeout(typeCharByChar, 20);
+                        }
+                    }
+                    typeCharByChar();
+                }
+
+                typeResponse(whyCSMessage, whyCSLocation);
+            });
+
+            window.addEventListener("load", function() {
+                window.scrollTo(0,0);
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+        <img height="80" width="150" src="MainWebsiteLogo.png" alt="Website Logo">
+        <div class="introLeftSwoosh">
+            <p>Welcome To My Story!</p>
+        </div>
+        <div class="whyCS">
+            <div class="whyCSTextResponse">
+                <p id="typeInCSResponse"></p>
+            </div>
+            <img src="buildingTheFuture.png" class="whyCSImage rightSwooshGeneral" alt="Why CS Image">
+        </div>
+        <section class="timeline scrollReveal">
+            <div class="timelineItem right-container">
+                <div class="text-box">
+                    <h2>Beginning my CS Journey</h2>
+                    <small>2022-2023</small>
+                    <p>
+                        I began to learn coding at CodeNinjas, starting with block programming in Scratch and learning how algorithms work.
+                        After a while, I pursued learning how to program in Python at YoungWonks, learning the fundamentals and exploring
+                        a few additional avenues: game development via Pygame and hardware applications with Raspberry Pi.
+                    </p>
+                </div>
+            </div>
+            <div class="timelineItem left-container">
+                <div class="text-box">
+                    <h2>Finding Java</h2>
+                    <small>2023-2024</small>
+                    <p>
+                        Through the Computer Science curriculum at my high school, I began to work with Java. Although I struggled with it initially,
+                        I was able to master the basics and learn Object-Oriented Programming with help from YouTube. I developed some smaller projects
+                        in Python during this time as well, such as a GUI Clock using Tkinter and a Calculator, still exploring my interests.
+                    </p>
+                </div>
+            </div>
+            <div class="timelineItem right-container">
+                <div class="text-box">
+                    <h2>More Java And Mobile App. Development</h2>
+                    <small>2024-2025</small>
+                    <p>
+                        During this time, I focused a lot on improving my Java skills, now preferring it over Python at times because of how comfortable
+                        I felt in the language (I still like both). I explored Mobile Application Development in this time, building applications of my own
+                        on Android Studio. Two of my favorite projects were a Cookie-Clicker inspired Minecraft Game and a Productivity Planner I built
+                        with a working scheduling platform and note taking capabilities.
+                    </p>
+                </div>
+            </div>
+            <div class="timelineItem left-container">
+                <div class="text-box">
+                    <h2>Onward to Data Structures!</h2>
+                    <small>2025-2026</small>
+                    <p>
+                        Some of my most favorite years in my programming journey, I learned how to work with Data Structures in Java. I've explored Arrays,
+                        Linked Lists, Sets, and Trees, and what makes them interesting is how differently each one works from another and the use-cases they
+                        have in data storage and handling. 2026 was also the year I spent working on CS50, which has been a wonderful, highly productive
+                        experience as I have learned to code in C, SQL, and now HTML, CSS, and Javascript!
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <div class="cardGrid scrollReveal bottomSwooshGeneral">
+            <div class="InteractiveCards">
+                <div class="interestsCard">
+                    <div class="frontSideCard">
+                        <h3>My Interests</h3>
+                    </div>
+                    <div class="backSideCard">
+                        <h3>I'm passionate about badminton, gaming, and music!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="InteractiveCards">
+                <div class="interestsCard">
+                    <div class="frontSideCard">
+                        <h3>Top 5 Favorite Movies + TV Shows</h3>
+                    </div>
+                    <div class="backSideCard">
+                        <h3>Breaking Bad, Batman Begins, Toy Story, The Last Samurai, Better Call Saul.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="InteractiveCards">
+                <div class="interestsCard">
+                    <div class="frontSideCard">
+                        <h3>Top Eats!</h3>
+                    </div>
+                    <div class="backSideCard">
+                        <h3>Pizza, Indian Breads (Naan, Kulchas, goes amazing with side dishes!), Ice Cream, Momos, and Grilled Cheese.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="InteractiveCards">
+                <div class="interestsCard">
+                    <div class="frontSideCard">
+                        <h3>My Favorite Cars!</h3>
+                    </div>
+                    <div class="backSideCard">
+                        <h3>BMW 5 Series, Honda Civic, Lamborghini Huracan, and Ford Mustang</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="InteractiveCards">
+                <div class="interestsCard">
+                    <div class="frontSideCard">
+                        <h3>Some Tech Topics That Intrigue Me</h3>
+                    </div>
+                    <div class="backSideCard">
+                        <h3>Self-Driving Cars, Machine Learning, and Media in the Digital Age.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="InteractiveCards">
+                <div class="interestsCard">
+                    <div class="frontSideCard">
+                        <h3>Other Random Stuff...</h3>
+                    </div>
+                    <div class="backSideCard">
+                        <h3>I don't like eggplants, Minecraft is really cool, and I don't use Social media platforms aside from YouTube.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="scrollAnimations.js"></script>
+    </body>
+ </html>

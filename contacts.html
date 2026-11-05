@@ -1,0 +1,58 @@
+<!-- Add your socials to this page (ie. email, LinkedIn, GitHub, etc.)-->
+ <!DOCTYPE html>
+
+ <html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>
+            Contacts - Ashish Sathyanarayanan
+        </title>
+        <script>
+            window.addEventListener("DOMContentLoaded", function(){
+                const introHeader = document.querySelector(".introLeftSwoosh");
+                introHeader.classList.add("animate");
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+        <img height="80" width="150" src="MainWebsiteLogo.png" alt="Website Logo">
+        <div class="introLeftSwoosh">
+            <p>Let's Get In Touch!</p>
+        </div>
+        <div class="container mt-4">
+            <div class="alert alert-info topSwooshGeneral" role="alert">
+                Please fill out the form below to send an email to my inbox.
+                It's the best way to reach me directly, and I'd be happy to
+                address any questions or inquires you might have as soon as
+                possible. Thanks!
+            </div>
+        </div>
+        <div class="contactForm">
+            <h2>Send An Email</h2>
+            <form action="https://formsubmit.co/connectash08@gmail.com" method="POST">
+                <div class="formComponent">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter name..." required>
+                </div>
+                <div class="formComponent">
+                    <label for="email">Your Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address..." required>
+                </div>
+                <div class="formComponent">
+                    <label for="message">Type Your Message Below</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="Submit">Send</button>
+            </form>
+        </div>
+    <script src="scrollAnimations.js"></script>
+    </body>
+ </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Homepage - Ashish Sathyanarayanan</title>
+        <script>
+            window.addEventListener("load", function() {
+                const screenElements = document.querySelectorAll(".fadeIn");
+                screenElements.forEach(function (element) {
+                    element.classList.add("visible");
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+        <img height="80" width="150" src="MainWebsiteLogo.png" alt="Website Logo">
+        <div class="introHeader leftSwooshGeneral">
+            Hi, I'm
+        </div>
+        <div class="nameText leftSwooshGeneral">
+            Ashish Sathyanarayanan
+        </div>
+        <div class="headline leftSwooshGeneral">
+            Future Innovator | CS Programmer
+        </div>
+        <div class="introSection">
+            <div class="desc fadeIn">
+                <p>
+                    I'm an aspiring programmer excited to explore the ins and outs of Computer Science, AI, and all things tech.
+                </p>
+
+                <p>
+                    I'm a Computer Science student looking for ways to turn my ideas into real, actionable solutions. I am ardent
+                    about programming, creativity, and collaboration- always ready to work with others to make a difference.
+                </p>
+
+                <p>
+                    Through my experiences in programming and beyond, I developed strong analytical and interpersonal skills. I can
+                    code in a few different programming languages and I'm eager to explore how technology and business can complement one
+                    another to create meaningful impact. My goal is to keep learning, growing, and contributing to projects that show promise.
+                </p>
+            </div>
+            <img src="WebsiteProfileImage.png" class="profileImage rightSwooshGeneral" alt="Profile Image">
+        </div>
+        <div class = "hobbiesTitle leftSwooshGeneral scrollReveal">
+                My Hobbies
+        </div>
+        <div class="HobbiesSection scrollReveal">
+            <div class="hobbies fadeIn">
+                <p>
+                    Programming - I like to build projects in Python & Java that relate to my interests, some of my favorites are
+                    the AI Workplace Assistant and Predictive Writing tool.
+                </p>
+                <p>
+                    Karate - I practice karate in my free time and enjoy learning new forms and self-defense techniques.
+                </p>
+                <p>
+                    Gaming - I like to play games on my Playstation, some of my favorites are the Batman Arkham Series and Insomniac's Spider Man games.
+                </p>
+            </div>
+            <img src="PythonImagePNG.png" class="pythonImage bottomSwooshGeneral" alt="Python Logo">
+            <img src="karateImage.png" class="karateImage bottomSwooshGeneral" alt="Karate Image">
+            <img src="SpiderManImage.png" class="SpiderManImage bottomSwooshGeneral" alt="Spider Man PS4 Image">
+        </div>
+    <script src="scrollAnimations.js"></script>
+    </body>
+</html>

@@ -1,0 +1,631 @@
+body{
+    padding-bottom: 100px;
+}
+
+.introHeader{
+    font-size: 35px;
+    color: #784096;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+}
+
+.nameText{
+    font-size: 35px;
+    color: #52C984;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+
+.headline{
+    font-size: 30px;
+    color: #292E1E;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 3px;
+}
+
+.hobbiesTitle{
+    font-size: 30px;
+    color: #292E1E;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 5px;
+}
+
+.hobbies{
+    font-size: 20px;
+    color: #292E1E;
+    padding-left: 80px;
+    padding-right: 40px;
+    margin-top: 15px;
+}
+
+.introSection{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* top, right, bottom, left */
+    padding: 5px 40px 40px 40px;
+    flex-wrap: wrap;
+}
+
+.desc{
+    font-size: 20px;
+    color: #292E1E;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    max-width: 900px;
+}
+
+.profileImage{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+}
+
+.pythonImage{
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 60px;
+}
+
+.karateImage{
+    width: 300px;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.SpiderManImage{
+    width: 350px;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.fadeIn{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fadeIn.visible{
+    opacity: 1;
+}
+
+nav{
+    text-align: center;
+    margin: 20px;
+}
+
+nav a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.projectsIntro{
+    font-size: 25px;
+    color: #52C984;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
+}
+
+.projectsBox{
+    margin-left: 30px;
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.workplaceAssistantCard{
+    margin-top: 50px;
+}
+
+.morrowviaLogo{
+    width: 250px;
+    max-width: 100%;
+    height: 200px;
+}
+
+.wA-cardTitle{
+    font-size: 20px;
+    color: #784096;
+}
+
+.predictiveWritingAssistantCard{
+    margin-top: 50px;
+}
+
+.pwaImage{
+    width: 250px;
+    max-width: 100%;
+    height: 200px;
+}
+
+.pwa-cardTitle{
+    font-size: 20px;
+    color: #784096;
+}
+
+.introLeftSwoosh{
+    font-size: 35px;
+    color: #52C984;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100vw);
+    animation: swooshInLeft 1.2s ease-out forwards
+}
+
+@keyframes swooshInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.leftSwooshGeneral{
+    animation: leftSwooshGenAnimation 1s ease-out forwards;
+}
+
+.rightSwooshGeneral{
+    animation: rightSwooshGenAnimation 1s ease-out forwards;
+}
+
+.bottomSwooshGeneral{
+    animation: bottomSwooshGenAnimation 1s ease-out forwards;
+}
+
+.whyCS{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    /* top, right, bottom, left */
+    padding: 5px 40px 40px 40px;
+    flex-wrap: nowrap;
+}
+
+.whyCSTextResponse{
+    flex: 1;
+    min-width: 0;
+    font-size: 20px;
+    color: #292E1E;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 3px;
+}
+
+.whyCSImage{
+    width: 400px;
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.timeline{
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timelineItem {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    animation: moveDown 1s linear forwards;
+}
+
+@keyframes moveDown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.text-box{
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.left-container{
+    left: 0;
+    margin-left: 0;
+    transform: translateX(-0%);
+}
+
+.right-container{
+    left: 0;
+    margin-left: 50%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #784096;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveLine 4s linear forwards;
+}
+
+@keyframes moveLine{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.cardGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.InteractiveCards{
+    width: 250px;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.interestsCard{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+}
+
+.InteractiveCards:hover .interestsCard{
+    transform: rotateY(180deg);
+}
+
+.frontSideCard,
+.backSideCard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 18px;
+    backface-visibility: hidden;
+
+}
+
+.frontSideCard{
+    background: #50C878;
+}
+
+.backSideCard{
+    background: #38bdf8;
+    transform: rotateY(180deg);
+}
+
+@keyframes leftSwooshGenAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightSwooshGenAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottomSwooshGenAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header{
+    font-size: 35px;
+    color: #784096;
+    padding-left: 300px;
+    padding-right: 40px;
+    margin-top: 40px;
+}
+
+.contactForm{
+    box-sizing: border-box;
+    margin: 60px auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 32px;
+}
+
+.contactForm h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formComponent{
+    margin-bottom: 26px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 120px;
+}
+
+button{
+    display: block;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 900px){
+    .introSection{
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .profileImage{
+        margin: 0 auto;
+    }
+
+    .whyCS{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .whyCSTextResponse{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .whyCSImage{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .projectsBox{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .contactForm{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header{
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 15px 0;
+    }
+
+    nav a{
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .introHeader, .nameText, .headline, .hobbiesTitle, .introLeftSwoosh, .header{
+        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .hobbies{
+        padding-left: 25px;
+        padding-right: 10px;
+        font-size: 17px;
+    }
+
+    .desc, .whyCSTextResponse {
+        font-size: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .projectsIntro {
+        font-size: 21px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .introSection {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .profileImage {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .whyCS {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .whyCSImage {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .projectsBox {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .workplaceAssistantCard, .predictiveWritingAssistantCard {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .timeline {
+        width: 100%;
+        margin: 50px auto;
+        padding-left: 20px;
+    }
+
+    .timeline::after {
+        left: 10px;
+    }
+
+    .timelineItem {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 10px 10px 25px;
+    }
+
+    .left-container, .right-container {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cardGrid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 0 10px;
+    }
+
+    .InteractiveCards {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contactForm {
+        width: 100%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .formComponent {
+        margin-bottom: 18px;
+    }
+}
+
+@keyframes swooshInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topSwooshGeneral{
+    animation: swooshInTop 1s ease-out forwards
+}
+
+/* new additions */
+
+.scrollReveal{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.scrollReveal.show{
+    opacity: 1;
+    transform: translateY(0);
+}
